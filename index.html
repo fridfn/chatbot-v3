@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="favicon.ico" favicon.ico/>
+  <meta name="viewport" content="width=device-width, initial-scale-1.0, user-scalable=no"/>
+  <title>Chat Bot</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+  />
+ </head>
+ <body onload="startTime()" id="body">
+ <header>
+  <div class="headerUser">
+   <ion-icon name="arrow-back-sharp"></ion-icon>
+   <div class="imgbox" id="imgBox">
+    <img src="boticon.webp" alt="FaBOT" id="img"/>
+   </div>
+   <div class="info">
+     <p class="user">FaBot Chat</p>
+     <p class="status">Online</p>
+   </div>
+    <ion-icon id="mail" name="mail-sharp"></ion-icon>
+    <ion-icon id="ellips" name="ellipsis-vertical-sharp"></ion-icon>
+  </div>
+ </header>
+  <h1 class="err">MAAF WEBSITE INI TIDAK TERSEDIA UNTUK VERSI DESKTOP</h1>
+  <div class="container">
+    <div class="container-linear"></div>
+    <div class="container-love"></div>
+   <div class="wrapper">
+    <div class="containerInput">
+      <input id="jawaban" type="text" placeholder="Silahkan Jawab" class='no-context-menu' onkeyup="checkInput()"/>
+      <div class="barier"></div>
+      <button onclick="botStart()" id="myButton" disabled><ion-icon name="send-sharp"></ion-icon></button>
+     </div>
+     <div class="footer">
+       <p>This website is made only for learning in development a website, FaBot-Chat <u>9 June Version.</u></p>
+     </div>
+   </div>
+   <div class="date">
+     <p>31 Mei 2023</p>
+   </div>
+   <div class="about">
+     <p><ion-icon name="lock-closed"></ion-icon> pesan dan riwayat chat terenkripsi secara end-to-end. tidak seorang pun di luar chat ini, termasuk developer yang dapat membaca atau melihatnya.</p>
+   </div>
+   <div class="containerChat" id="firstContentPertanyaan">
+     <div class="chatPertanyaan" id="firstChatPertanyaan">
+       <p id="firstPertanyaan">pertanyaan</p>
+       <p id="timeQuestion"></p>
+      </div>
+    </div>
+   <div class="containerChat" id="contentJawaban">
+       <div class="chatJawaban" id="chatJawaban">
+         <p id="textJawaban">Jawaban</p>
+         <span>
+          <p id="timeAsk"></p>
+          <ion-icon name="checkmark-done-sharp" id="check2"></ion-icon>
+         </span>
+       </div>
+   </div>
+   <div class="containerChat" id="contentPertanyaan">
+     <div class="chatPertanyaan" id="chatPertanyaan">
+       <p id="textPertanyaan">pertanyaan kedua</p>
+       <p id="timeQuestion"></p>
+      </div>
+    </div>
+  </div>
+  <script src="chatbot.js"></script>
+  <script src="profile.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ </body>
+</html>
